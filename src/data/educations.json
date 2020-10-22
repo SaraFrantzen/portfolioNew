@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Craft Academy",
+      "image": "src/img/craft.png",
+      "description": "12 week Craft Academy BootCamp. JavaScript, Ruby, Ruby on Rails, ReactJS, React Native. Pair-progamming and test driven development is a matter of course",
+      "time": "2020",
+      "title": "Full Stack Web Developer",
+      "web": "https://www.craftacademy.se/"
+    },
+    {
+      "id": 2,
+      "name": "Eleiko",
+      "image": "src/img/eleiko.png",
+      "description": "In addition to personal trainer, I have also finished Eleiko Strenght Coach and Eleiko Powerlifting courses",
+      "time": "2015",
+      "title": "Lic. Eleiko Personal Trainer",
+      "web": "https://www.eleiko.com/sv/education#gs.fezo3x"
+    },
+    {
+      "id": 3,
+      "name": "Stockholm University, Geochemical Institution",
+      "image": "src/img/uni.jpg",
+      "description": "Masterproject 60hp 'Using n-alkanes to reconstruct changes in hydrology and vegetation of the Braamhoek wetland, South Africa, during the last 16 000 years' ",
+      "time": "2012",
+      "title": "Masterdegree in Quaternary Geology and Climate Development",
+      "web": "https://www.su.se/geo/english/research/research-areas/geochemistry"
+    },
+    {
+      "id": 4,
+      "name": "Indea Yoga, Mysore",
+      "image": "src/img/indeayoga.png",
+      "description": "2months Yoga Teacher Training (500+ hours) focusing on advanced Ashtanga yoga. Including Pranayama, Kriyas, Chanting, Philosophy and Medichal Yoga",
+      "time": "2019",
+      "title": "500+ h TTC Ashtanga Advanced",
+      "web": "https://indeayoga.com/"
+    }
+  ]
+

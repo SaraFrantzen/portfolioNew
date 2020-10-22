@@ -1,13 +1,193 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Header */
+#nav-header {
+  height: 100px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#main-container,
+.main.container {
+  margin-top: 10em;
 }
+
+#header {
+  font-family: "Over the Rainbow", cursive;
+  font-size: 40px;
+}
+
+/* Hello */
+#profile-img {
+  height: 400px;
+  margin-bottom: 40px;
+  margin-left: 150px;
+}
+
+#welcome-txt {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+#focus {
+  font-family: "Give You Glory", cursive;
+  font-size: 100px;
+  color: purple;
+  margin-left: 25px;
+}
+#one-word {
+  margin-top: 50px;
+  margin-left: 60px;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+#working-with {
+  margin-top: 80px;
+  color: purple;
+  font-size: 25px;
+}
+
+/* CV */
+#cv-img {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+#cv-txt {
+  font-size: 20px;
+}
+#cv-header {
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-family: "Over the Rainbow", cursive;
+  font-size: 60px;
+  color: #331100;
+  font-weight: bold;
+}
+body .ui.cards > .card {
+  box-shadow: none;
+  margin-inline-end: 40px;
+}
+
+#cv-card {
+  margin-top: 50px;
+}
+
+#cv-button {
+  background-color: #993300;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+}
+
+#cv-button:hover {
+  background-color: #990000;
+}
+
+.title {
+  color: #992600;
+  margin-bottom: 10px;
+}
+
+#cv-grid {
+  margin-bottom: 200px;
+}
+
+#cv-time {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Educations */
+
+#education-grid {
+  margin-bottom: 500px;
+  padding: 80px;
+}
+
+#education-img {
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
+
+#education-title {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  color: green;
+  font-size: 20px;
+}
+
+#education-description {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+/* Projects */
+#projects-header {
+  margin-bottom: 60px;
+  font-family: "Over the Rainbow", cursive;
+  font-size: 60px;
+  color: purple;
+}
+
+.ui.card {
+  height: 200px;
+  margin-inline-end: 40px;
+}
+
+#webpage,
+#github {
+  background-color: #ffccff;
+  border: #990066;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+/* Contact */
+#contact-img {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 40px;
+}
+
+#contact-header {
+  margin-bottom: 40px;
+  font-family: "Over the Rainbow", cursive;
+  font-size: 60px;
+  color: #ffccff;
+}
+
+#contact-txt {
+  font-size: 20px;
+}
+#contact-button {
+  background-color: #ffccff;
+  color: purple;
+}
+
+.ui.form {
+  margin-bottom: 300px;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f5f5f5;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#footer-url,
+#footer {
+  color: grey;
+}
+
+#footer-url:hover {
+  color: black;
+}
+

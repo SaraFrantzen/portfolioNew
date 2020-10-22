@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "company": "Apollo",
+      "url": "https://www.apollo.se/resor/traningsresor",
+      "image": "./src/img/apollo.png",
+      "description": "Been working as a Sports instructor / yogateacher for Apollo Sports in Greece (Rhodes, Crete & Zakhyntoz), Turkey and Egypt",
+      "time": "2018 - 2019",
+      "title": "Sports Instructor / Yoga teacher"
+    },
+    {
+      "id": 2,
+      "company": "Form Gotland",
+      "url": "http://www.formgotland.se",
+      "image": "./src/img/form.jpg",
+      "description": "Personal Trainer at the largest gym of Gotland, I also ran a strength club as an association",
+      "time": "2014 - 2017",
+      "title": "Personal Trainer"
+    },
+    {
+      "id": 3,
+      "company": "Avesta municipality",
+      "url": "http://www.avesta.se",
+      "image": "./src/img/avesta.jpg",
+      "description": "The trainee program by Avesta extends a year and involves preparation for a senior management position or other strategic positions within the municipality",
+      "time": "2013",
+      "title": "Trainee"
+    },
+  
+    {
+      "id": 4,
+      "company": "Colorez",
+      "url": "",
+      "image": "./src/img/colorez.jpg",
+      "description": "Colorez is a former street-style clothing shop that was located in Stockholm",
+      "time": "2009 - 2010",
+      "title": "Store manager"
+    },
+  
+    {
+      "id": 5,
+      "company": "SKANSKA",
+      "url": "http://www.skanska.se",
+      "image": "./src/img/skanska.jpg",
+      "description": "I calculated the hydraulic conductivity in 'Hallandsåsberget' to be able to assess how much water would be let in when drilling the tunnel",
+      "time": "2008",
+      "title": "Geologist"
+    },
+  
+    {
+      "id": 6,
+      "company": "Stockholm University, geochemical institution",
+      "url": "http://www.su.se",
+      "image": "",
+      "description": "I prepped and analyzed samples for further research",
+      "time": "2007",
+      "title": "Lab Assistant"
+    }
+  ]
+  
