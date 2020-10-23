@@ -1,7 +1,11 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Link, NavLink } from "react-router-dom";
+import "../i18n";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <nav className="ui fixed inverted menu">
       <div className="ui container" id="nav-header">
@@ -24,8 +28,9 @@ const Header = () => {
             className="ui item"
             activeStyle={{ fontWeight: "bold" }}
             to="/educations"
+            name="educations"
           >
-            Educations
+            {t["educations"]}
           </NavLink>
 
           <NavLink
@@ -33,8 +38,9 @@ const Header = () => {
             className="ui item"
             activeStyle={{ fontWeight: "bold" }}
             to="/projects"
+            name="projects"
           >
-            Projects
+            {t["projects"]}
           </NavLink>
 
           <NavLink
@@ -42,8 +48,9 @@ const Header = () => {
             className="ui item"
             activeStyle={{ fontWeight: "bold" }}
             to="/contact"
+            name="contact"
           >
-            Contact
+            {t["contact"]}
           </NavLink>
 
           <NavLink
@@ -54,6 +61,21 @@ const Header = () => {
           >
             Instagram
           </NavLink>
+
+       {/*    <NavLink
+            onClick={() => {
+              i18n.changeLanguage("sv");
+            }}
+          >
+            Svenska
+          </NavLink>
+          <NavLink
+            onClick={() => {
+              i18n.changeLanguage("en");
+            }}
+          >
+            English
+          </NavLink> */}
         </div>
       </div>
     </nav>
