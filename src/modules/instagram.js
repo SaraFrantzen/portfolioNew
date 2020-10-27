@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const IG = {
+const Media = {
   async index() {
     const apiKey = process.env.REACT_APP_OPEN_CAGE_API_KEY;
     let result = await axios.get(
@@ -10,4 +10,4 @@ const IG = {
   },
 };
 
-export { IG };
+export { Media };

@@ -1,24 +1,23 @@
 import { Container } from "semantic-ui-react";
 import React, { useState, useEffect } from "react";
 import EducationCard from "./EducationCard";
-import axios from "axios";
+import { Data } from '../modules/data';
 
 const Educations = () => {
-  const [education, setEducations] = useState([]);
+  const [educations, setEducations] = useState([]);
 
   useEffect(() => {
     const getEducations = async () => {
-      await axios.get("./src/data/educations.json").then((response) => {
-        setEducations(response.data.educations);
-      });
+      setEducations(await Data.educations());
     };
+
     getEducations();
   }, []);
 
   return (
     <>
       <Container>
-        {education.map((education) => {
+        {educations.map((education) => {
           return (
             <div id={"education-" + education.id} key={education.id}>
               <EducationCard education={education} />

@@ -1,8 +1,6 @@
 /* Header */
 #sub-menu {
   background-color: #990066;
-  margin: 0px;
-  padding: 0px;
 }
 #insta-tab {
   margin-right: 90em;
@@ -15,7 +13,10 @@
 
 #header {
   font-family: "Over the Rainbow", cursive;
-  font-size: 40px;
+  font-size: 60px;
+  padding: 5px;
+  margin-left: 10px;
+  
 }
 
 /* Index */
@@ -32,7 +33,7 @@
 }
 
 #welcome-txt {
-  margin-top: 50px;
+  
   font-size: 18px;
 }
 

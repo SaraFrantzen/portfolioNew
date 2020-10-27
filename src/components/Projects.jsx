@@ -1,16 +1,15 @@
-import axios from "axios";
 import ProjectCard from "./ProjectCard";
 import React, { useState, useEffect } from "react";
+import { Data } from "../modules/data";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     const getProjects = async () => {
-      await axios.get("./src/data/projects.json").then((response) => {
-        setProjects(response.data);
-      });
+      setProjects(await Data.projects());
     };
+
     getProjects();
   }, []);
 
