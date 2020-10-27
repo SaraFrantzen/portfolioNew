@@ -1,14 +1,15 @@
 import { Container } from "semantic-ui-react";
 import React, { useState, useEffect } from "react";
 import EducationCard from "./EducationCard";
-import { Data } from '../modules/data';
+import { Data } from "../modules/data";
 
 const Educations = () => {
   const [educations, setEducations] = useState([]);
 
   useEffect(() => {
     const getEducations = async () => {
-      setEducations(await Data.educations());
+      const fetchEducations = await Data.educations();
+      setEducations(fetchEducations);
     };
 
     getEducations();
