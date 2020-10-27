@@ -13,7 +13,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng,
-    debug: true,
+   /*  debug: true, */
     whitelist: availableLngs,
     interpolation: {
       escapeValue: false,

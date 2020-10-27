@@ -1,85 +1,80 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink } from "react-router-dom";
-import "../i18n";
+import { Link } from "react-router-dom";
+import { Menu, Segment, Header } from "semantic-ui-react";
+import i18n from "../i18n";
 
-const Header = () => {
+const PortfolioHeader = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className="ui fixed inverted menu">
-      <div className="ui container" id="nav-header">
-        <Link id="header" className="header item" to="/">
-          Sara Lundkvist
-        </Link>
+    <>
+      <Segment inverted>
+        <Menu inverted>
+          <Menu.Item as={Link} to="/" id="header">
+            Sara Lundkvist
+          </Menu.Item>
+        </Menu>
 
-        <div className="right menu">
-          <NavLink
-            id="cv-tab"
-            className="ui item"
-            activeStyle={{ fontWeight: "bold" }}
-            to="/cv"
-          >
-            CV
-          </NavLink>
+        <Header.Subheader inverted>
+          <Menu id="sub-menu">
+            <Menu.Item as={Link} to="/cv" id="cv-tab">
+              CV
+            </Menu.Item>
 
-          <NavLink
-            id="educations-tab"
-            className="ui item"
-            activeStyle={{ fontWeight: "bold" }}
-            to="/educations"
-            name="educations"
-          >
-            {t["educations"]}
-          </NavLink>
+            <Menu.Item
+              as={Link}
+              to="/educations"
+              name="educations"
+              id="educations-tab"
+            >
+              {t("educations")}
+            </Menu.Item>
 
-          <NavLink
-            id="projects-tab"
-            className="ui item"
-            activeStyle={{ fontWeight: "bold" }}
-            to="/projects"
-            name="projects"
-          >
-            {t["projects"]}
-          </NavLink>
+            <Menu.Item
+              as={Link}
+              to="/projects"
+              name="projects"
+              id="projects-tab"
+            >
+              {t("projects")}
+            </Menu.Item>
 
-          <NavLink
-            id="contact-tab"
-            className="ui item"
-            activeStyle={{ fontWeight: "bold" }}
-            to="/contact"
-            name="contact"
-          >
-            {t["contact"]}
-          </NavLink>
+            <Menu.Item as={Link} to="/instagram" name="contact" id="insta-tab">
+              Instagram
+            </Menu.Item>
 
-          <NavLink
-            id="insta-tab"
-            className="ui item"
-            activeStyle={{ fontWeight: "bold" }}
-            to="/instagram"
-          >
-            Instagram
-          </NavLink>
+            <Menu.Item
+              as={Link}
+              to="/contact"
+              name="contact"
+              id="contact-tab"
+              position="right"
+            >
+              {t("contact")}
+            </Menu.Item>
 
-       {/*    <NavLink
-            onClick={() => {
-              i18n.changeLanguage("sv");
-            }}
-          >
-            Svenska
-          </NavLink>
-          <NavLink
-            onClick={() => {
-              i18n.changeLanguage("en");
-            }}
-          >
-            English
-          </NavLink> */}
-        </div>
-      </div>
-    </nav>
+            <Menu.Item
+              onClick={() => {
+                i18n.changeLanguage("sv");
+              }}
+              position="right"
+            >
+              Svenska
+            </Menu.Item>
+            <Menu.Item
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+              position="right"
+            >
+              English
+            </Menu.Item>
+          </Menu>
+        </Header.Subheader>
+      </Segment>
+    </>
   );
 };
 
-export default Header;
+export default PortfolioHeader;

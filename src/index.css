@@ -1,6 +1,11 @@
 /* Header */
-#nav-header {
-  height: 100px;
+#sub-menu {
+  background-color: #990066;
+  margin: 0px;
+  padding: 0px;
+}
+#insta-tab {
+  margin-right: 90em;
 }
 
 #main-container,
@@ -13,7 +18,13 @@
   font-size: 40px;
 }
 
-/* Hello */
+/* Index */
+#introduction {
+  color: purple;
+  font-size: 30px;
+  font-family: "Give You Glory", cursive;
+  font-weight: bold;
+}
 #profile-img {
   height: 400px;
   margin-bottom: 40px;
@@ -190,4 +201,3 @@ footer {
 #footer-url:hover {
   color: black;
 }
-
