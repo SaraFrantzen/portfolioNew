@@ -2,9 +2,10 @@ import React from "react";
 import { Card, Image } from "semantic-ui-react";
 
 const InstaCard = ({ media }) => {
+
   return (
     <>
-      <Card>
+      <Card id="insta-card" fluid>
         <Image
           src={media.media_url}
           alt="instagram-pic"

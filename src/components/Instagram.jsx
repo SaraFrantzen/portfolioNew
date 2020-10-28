@@ -3,8 +3,11 @@ import { Container, Image, Card, Grid } from "semantic-ui-react";
 import { Media } from "../modules/instagram";
 import instagram from "../img/instagram.png";
 import InstaCard from "./InstaCard";
+import { useTranslation } from "react-i18next";
+
 
 const Instagram = () => {
+  const { t } = useTranslation();
   const [media, setMedia] = useState([]);
 
   useEffect(() => {
@@ -17,19 +20,21 @@ const Instagram = () => {
 
   return (
     <>
+    <Container>
       <Grid>
         <Grid.Row id="insta-row">
           <Grid.Column>
             <Image src={instagram} size="medium" />
           </Grid.Column>
           <Grid.Column width={8}>
-            <p id="insta-header">Latest post from Instagram </p>
+            <p id="insta-header">{t("instagram")}</p>
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <Container>
-        <Grid>
-          <Grid.Row columns={2}>
+   </Container>
+        <Grid textAlign="center" padded="horizontally">
+          <Grid.Row columns={5}>
+            
             {media.map((media) => {
               return (
                 <div
@@ -43,7 +48,7 @@ const Instagram = () => {
             })}
           </Grid.Row>
         </Grid>
-      </Container>
+     
     </>
   );
 };

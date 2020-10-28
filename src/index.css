@@ -209,6 +209,14 @@ body .ui.cards > .card {
 #insta-img{
   margin-bottom: 10px;
 }
+#insta-card{
+  height: 25em;
+  
+}
+.media-container{
+margin-right: 2em;
+margin-bottom: 2em;
+}
 
 /* Footer */
 #footer {
