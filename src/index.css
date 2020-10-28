@@ -192,6 +192,24 @@ body .ui.cards > .card {
   margin-bottom: 300px;
 }
 
+/* INSTAGRAM */
+
+#insta-header{
+  font-family: "Over the Rainbow", cursive;
+  font-size: 40px;
+  color: purple;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#insta-row{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#insta-img{
+  margin-bottom: 10px;
+}
+
 /* Footer */
 #footer {
   position: fixed;

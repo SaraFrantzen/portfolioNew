@@ -12,7 +12,7 @@ describe("User can see Instagram posts", () => {
   });
 
   it("displays Instagram picture and caption", () => {
-    cy.get("insta-img").should("exist");
-    cy.get("insta-caption").contains("To all my beloved ones. ");
+    cy.get("#insta-img").should("exist");
+    cy.get("#insta-caption").contains("To all my beloved ones. ");
   });
 });

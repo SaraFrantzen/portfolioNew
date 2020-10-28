@@ -21,18 +21,22 @@ const Projects = () => {
           Web Development
         </h1>
       </div>
-      <Container >
-      <Grid>
-        <Grid.Row columns={3} >
-          {projects.map((project) => {
-            return (
-              <div id={"project-" + project.id} key={project.id} className="project-container">
-                <ProjectCard project={project} />
-              </div>
-            );
-          })}
-        </Grid.Row>
-      </Grid>
+      <Container>
+        <Grid>
+          <Grid.Row columns={5}>
+            {projects.map((project) => {
+              return (
+                <div
+                  id={"project-" + project.id}
+                  key={project.id}
+                  className="project-container"
+                >
+                  <ProjectCard project={project} />
+                </div>
+              );
+            })}
+          </Grid.Row>
+        </Grid>
       </Container>
     </>
   );
