@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Container } from "semantic-ui-react";
 import { Media } from "../modules/instagram";
 
 const Instagram = () => {
@@ -6,13 +7,20 @@ const Instagram = () => {
 
   useEffect(() => {
     const getMediaIndex = async () => {
-      setMedia(await Media.index());
+     const fetchMedia = await Media.index();
+     setMedia(fetchMedia)
     };
     getMediaIndex();
   }, []);
 
+
+
+
+
+
   return (
     <>
+    <Container>
       {media.map((media) => {
         return (
           <>
@@ -21,6 +29,7 @@ const Instagram = () => {
           </>
         );
       })}
+      </Container>
     </>
   );
 };

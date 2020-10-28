@@ -1,3 +1,8 @@
+/* MAIN */
+#main-container{
+  margin-bottom: 100px;
+}
+
 /* Header */
 #sub-menu {
   background-color: #990066;
@@ -58,6 +63,7 @@
 }
 
 /* CV */
+
 #cv-img {
   width: 100%;
   height: 500px;
@@ -68,7 +74,7 @@
   font-size: 20px;
 }
 #cv-header {
-  margin-bottom: 40px;
+ 
   margin-top: 50px;
   font-family: "Over the Rainbow", cursive;
   font-size: 60px;
@@ -80,9 +86,7 @@ body .ui.cards > .card {
   margin-inline-end: 40px;
 }
 
-#cv-card {
-  margin-top: 50px;
-}
+
 
 #cv-button {
   background-color: #993300;
@@ -100,8 +104,11 @@ body .ui.cards > .card {
   margin-bottom: 10px;
 }
 
+.cv-cards{
+  margin-bottom: 100px;
+}
 #cv-grid {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 #cv-time {
@@ -134,6 +141,11 @@ body .ui.cards > .card {
 }
 
 /* Projects */
+.project-container {
+
+  margin-right: 2em;
+  margin-bottom: 40em;
+}
 #projects-header {
   margin-bottom: 60px;
   font-family: "Over the Rainbow", cursive;
@@ -143,7 +155,7 @@ body .ui.cards > .card {
 
 .ui.card {
   height: 200px;
-  margin-inline-end: 40px;
+  
 }
 
 #webpage,
@@ -184,6 +196,7 @@ body .ui.cards > .card {
 #footer {
   position: fixed;
   bottom: 0;
+  z-index: 5;
   width: 100%;
   height: 60px;
   padding-top: 20px;

@@ -11,13 +11,12 @@ const Educations = () => {
       const fetchEducations = await Data.educations();
       setEducations(fetchEducations);
     };
-
     getEducations();
   }, []);
 
   return (
     <>
-      <Container>
+      <Container id="main-container">
         {educations.map((education) => {
           return (
             <div id={"education-" + education.id} key={education.id}>
@@ -25,7 +24,7 @@ const Educations = () => {
             </div>
           );
         })}
-        HELLO
+       
       </Container>
     </>
   );

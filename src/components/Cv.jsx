@@ -1,6 +1,6 @@
 import Resume from "./Resume";
 import React, { useState, useEffect } from "react";
-import { Container } from "semantic-ui-react";
+import { Container, Grid } from "semantic-ui-react";
 import i18n from "../i18n";
 import { useTranslation } from "react-i18next";
 import { Data } from "../modules/data";
@@ -18,15 +18,7 @@ const CV = () => {
 
   return (
     <>
-      <Container>
-        {cv.map((cv) => {
-          return (
-            <div id={"cv-" + cv.id} key={cv.id}>
-              <Resume cv={cv} />
-            </div>
-          );
-        })}
-        {cv.title}
+      <Container id="main-container">
         <div className="ui main container">
           <img
             id="cv-img"
@@ -41,6 +33,18 @@ const CV = () => {
 
           <div className="ui stackable four column grid" id="cv-grid"></div>
         </div>
+
+        <Grid className="cv-cards">
+        <Grid.Row columns={3} >
+        {cv.map((cv) => {
+          return (
+            <div id={"cv-" + cv.id} key={cv.id} >
+              <Resume cv={cv} />
+            </div>
+          );
+        })}
+        </Grid.Row>
+        </Grid>
       </Container>
     </>
   );
