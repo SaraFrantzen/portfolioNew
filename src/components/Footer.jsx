@@ -1,10 +1,11 @@
 import React from "react";
-
+import {  Segment } from "semantic-ui-react";
 const Footer = () => {
   return (
-    <footer>
+   
+      <Segment inverted id="footer">
       <div className="ui container">
-        <p id="footer">
+        <p id="footer-txt">
           <a
             id="footer-url"
             href="https://www.linkedin.com/in/sara-lundkvist-a0149655/"
@@ -18,7 +19,8 @@ const Footer = () => {
           </a>
         </p>
       </div>
-    </footer>
+      </Segment>
+
   );
 };
 

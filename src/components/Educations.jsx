@@ -1,41 +1,32 @@
-import axios from "axios";
-import React, { Component } from "react";
+import { Container } from "semantic-ui-react";
+import React, { useState, useEffect } from "react";
 import EducationCard from "./EducationCard";
+import { Data } from "../modules/data";
 
+const Educations = () => {
+  const [educations, setEducations] = useState([]);
 
-class Educations extends Component {
-  state = {
-    educations: [],
-  };
+  useEffect(() => {
+    const getEducations = async () => {
+      const fetchEducations = await Data.educations();
+      setEducations(fetchEducations);
+    };
+    getEducations();
+  }, []);
 
-  componentDidMount() {
-    axios.get("../data/educations.json").then((response) => {
-      this.setState({
-        educations: response.data,
-      });
-    });
-  }
-  render() {
-    const educations = this.state.educations;
-    let educationsList;
-
-    if (educations.length > 0) {
-      educationsList = educations.map((education) => {
-        return (
-          <div id={"education-" + education.id} key={education.id}>
-            <EducationCard education={education} />
-          </div>
-        );
-      });
-    }
-
-    return (
-      <div className="ui main container">
-        <div className="ui stackable three column grid" id="education-grid">
-          {educationsList}
-        </div>
-      </div>
-    );
-  }
-}
+  return (
+    <>
+      <Container id="main-container">
+        {educations.map((education) => {
+          return (
+            <div id={"education-" + education.id} key={education.id}>
+              <EducationCard education={education} />
+            </div>
+          );
+        })}
+       
+      </Container>
+    </>
+  );
+};
 export default Educations;

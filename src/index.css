@@ -1,6 +1,14 @@
+/* MAIN */
+#main-container{
+  margin-bottom: 100px;
+}
+
 /* Header */
-#nav-header {
-  height: 100px;
+#sub-menu {
+  background-color: #990066;
+}
+#insta-tab {
+  margin-right: 90em;
 }
 
 #main-container,
@@ -10,10 +18,19 @@
 
 #header {
   font-family: "Over the Rainbow", cursive;
-  font-size: 40px;
+  font-size: 60px;
+  padding: 5px;
+  margin-left: 10px;
+  
 }
 
-/* Hello */
+/* Index */
+#introduction {
+  color: purple;
+  font-size: 30px;
+  font-family: "Give You Glory", cursive;
+  font-weight: bold;
+}
 #profile-img {
   height: 400px;
   margin-bottom: 40px;
@@ -21,7 +38,7 @@
 }
 
 #welcome-txt {
-  margin-top: 50px;
+  
   font-size: 18px;
 }
 
@@ -46,6 +63,7 @@
 }
 
 /* CV */
+
 #cv-img {
   width: 100%;
   height: 500px;
@@ -56,7 +74,7 @@
   font-size: 20px;
 }
 #cv-header {
-  margin-bottom: 40px;
+ 
   margin-top: 50px;
   font-family: "Over the Rainbow", cursive;
   font-size: 60px;
@@ -68,9 +86,7 @@ body .ui.cards > .card {
   margin-inline-end: 40px;
 }
 
-#cv-card {
-  margin-top: 50px;
-}
+
 
 #cv-button {
   background-color: #993300;
@@ -88,8 +104,11 @@ body .ui.cards > .card {
   margin-bottom: 10px;
 }
 
+.cv-cards{
+  margin-bottom: 100px;
+}
 #cv-grid {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 #cv-time {
@@ -122,6 +141,11 @@ body .ui.cards > .card {
 }
 
 /* Projects */
+.project-container {
+
+  margin-right: 2em;
+  margin-bottom: 40em;
+}
 #projects-header {
   margin-bottom: 60px;
   font-family: "Over the Rainbow", cursive;
@@ -131,7 +155,7 @@ body .ui.cards > .card {
 
 .ui.card {
   height: 200px;
-  margin-inline-end: 40px;
+  
 }
 
 #webpage,
@@ -168,17 +192,42 @@ body .ui.cards > .card {
   margin-bottom: 300px;
 }
 
+/* INSTAGRAM */
+
+#insta-header{
+  font-family: "Over the Rainbow", cursive;
+  font-size: 40px;
+  color: purple;
+  font-weight: bold;
+  margin-top: 1em;
+}
+#insta-row{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#insta-img{
+  margin-bottom: 10px;
+}
+#insta-card{
+  height: 25em;
+  
+}
+.media-container{
+margin-right: 2em;
+margin-bottom: 2em;
+}
+
 /* Footer */
-footer {
+#footer {
   position: fixed;
   bottom: 0;
+  z-index: 5;
   width: 100%;
   height: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f5f5f5;
-  margin-top: 0;
-  margin-bottom: 0;
+
   text-align: center;
 }
 
@@ -188,6 +237,5 @@ footer {
 }
 
 #footer-url:hover {
-  color: black;
+  color:#990066;
 }
-

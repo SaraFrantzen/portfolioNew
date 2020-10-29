@@ -1,43 +1,45 @@
-import axios from "axios";
 import ProjectCard from "./ProjectCard";
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
+import { Data } from "../modules/data";
+import { Container, Grid } from "semantic-ui-react";
 
-class Projects extends Component {
-  state = {
-    projects: [],
-  };
+const Projects = () => {
+  const [projects, setProjects] = useState([]);
 
-  componentDidMount() {
-    axios.get("./src/data/projects.json").then((response) => {
-      this.setState({
-        projects: response.data,
-      });
-    });
-  }
+  useEffect(() => {
+    const getProjects = async () => {
+      const fetchProjects = await Data.projects();
+      setProjects(fetchProjects);
+    };
+    getProjects();
+  }, []);
 
-  render() {
-    const projects = this.state.projects;
-    let projectsList;
-
-    if (projects.length > 0) {
-      projectsList = projects.map((project) => {
-        return (
-          <div id={"project-" + project.id} key={project.id}>
-            <ProjectCard project={project} />
-          </div>
-        );
-      });
-    }
-
-    return (
+  return (
+    <>
       <div className="ui main container">
         <h1 id="projects-header" className="ui header">
           Web Development
         </h1>
-        <div className="ui stackable four column grid">{projectsList}</div>
       </div>
-    );
-  }
-}
+      <Container>
+        <Grid>
+          <Grid.Row columns={5}>
+            {projects.map((project) => {
+              return (
+                <div
+                  id={"project-" + project.id}
+                  key={project.id}
+                  className="project-container"
+                >
+                  <ProjectCard project={project} />
+                </div>
+              );
+            })}
+          </Grid.Row>
+        </Grid>
+      </Container>
+    </>
+  );
+};
 
 export default Projects;

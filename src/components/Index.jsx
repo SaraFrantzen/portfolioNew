@@ -1,8 +1,11 @@
 import React from "react";
-import { Image } from 'semantic-ui-react'
-import sara3 from "../img/sara3.jpg"
+import { Image } from "semantic-ui-react";
+import sara3 from "../img/sara3.jpg";
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 
 const Hello = () => {
+  const { t } = useTranslation();
   return (
     <div class="ui three column grid" id="main-container">
       <div class="column">
@@ -10,20 +13,17 @@ const Hello = () => {
       </div>
 
       <div class="column" id="welcome-txt">
-        <p>Junior software developer based in Stockholm Sweden</p>
-        <p>
-          Trying to solve problems, stand on my head and be creative every day{" "}
-        </p>
-        <p>
-          Currently attending the Craft Academy Bootcamp, learning to breathe
-          test-driven development, think agile and talk Java Script
-        </p>
-        <p id="working-with">Working with</p>
-        <p>Ruby, Ruby on Rails, JavaScript, ReactJS, React Native, Cypress </p>
+        <p id="introduction">{t("welcome")}</p>
+
+        <p>{t("welcome1")}</p>
+        <p>{t("welcome2")}</p>
+
+        <p id="working-with"> {t("working-with")}</p>
+        <p>Ruby, Ruby on Rails, JavaScript, ReactJS, React Native, Semantic UI, CSS </p>
       </div>
       <div class="column">
-        <h2 id="one-word">Explained in one word</h2>
-        <h3 id="focus">Focused</h3>
+        <h2 id="one-word"> {t("explained")}</h2>
+        <h3 id="focus">  {t("focused")}</h3>
       </div>
     </div>
   );

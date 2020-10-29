@@ -1,35 +1,35 @@
 import React from "react";
+import { Button, Card, Icon, Image } from "semantic-ui-react";
 
 const ProjectCard = ({ project }) => {
   return (
     <>
-      <div class="ui card">
-        <div class="image">
-          <img src={project.image} />
-        </div>
-        <div class="content">
-          <h3 class="ui header">{project.name}</h3>
-          <div class="description">{project.description}</div>
+      <Card>
+        <Image src={project.image} />
+
+        <Card.Content>
+          <Card.Header>{project.name}</Card.Header>
+          <Card.Description>{project.description}</Card.Description>
 
           <a href={project.git} target="_blank">
-            <div class="ui circular animated button" id="webpage" tabindex="0">
-              <div class="hidden content">GitHub</div>
-              <div class="visible content">
-                <i class="big purple github icon"></i>{" "}
-              </div>
-            </div>{" "}
+            <Button animated circular id="webpage" tabindex="0">
+              <Button.Content visible>
+                <Icon name="big purple github icon" />
+              </Button.Content>
+              <Button.Content hidden>GitHub</Button.Content>
+            </Button>
           </a>
 
           <a href={project.web} target="_blank">
-            <div class="ui circular animated button" id="webpage" tabindex="0">
-              <div class="hidden content">Web Page</div>
-              <div class="visible content">
-                <i class="big purple chrome icon"></i>{" "}
-              </div>
-            </div>{" "}
+            <Button animated circular id="webpage" tabindex="0">
+              <Button.Content visible>
+                <Icon name="big purple chrome icon" />
+              </Button.Content>
+              <Button.Content hidden>Web Page</Button.Content>
+            </Button>
           </a>
-        </div>
-      </div>
+        </Card.Content>
+      </Card>
     </>
   );
 };

@@ -1,4 +1,5 @@
-[
+{
+  "educations": [
     {
       "id": 1,
       "name": "Craft Academy",
@@ -36,4 +37,5 @@
       "web": "https://indeayoga.com/"
     }
   ]
+}
 
