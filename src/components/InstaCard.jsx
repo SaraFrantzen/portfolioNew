@@ -1,11 +1,17 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 const InstaCard = ({ media }) => {
 
   return (
     <>
-      <Card id="insta-card" fluid>
+      <Card fluid
+      id="insta-card" 
+      as={Link}
+      to={`/instagram/${media.id}`}
+      data-cy={"media-" + media.id}
+      >
         <Image
           src={media.media_url}
           alt="instagram-pic"

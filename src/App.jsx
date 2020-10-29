@@ -8,6 +8,7 @@ import Educations from "./components/Educations";
 import Contact from "./components/Contact";
 import Instagram from "./components/Instagram";
 import Cv from "./components/Cv";
+import SingleInstagram from './components/SingleInstagram';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route exact path="/projects" component={Projects}></Route>
           <Route exact path="/contact" component={Contact}></Route>
           <Route exact path="/instagram" component={Instagram}></Route>
+          <Route exact path="/instagram/:id" component={SingleInstagram}></Route>
         </Switch>
         <Footer />
       </Suspense>
