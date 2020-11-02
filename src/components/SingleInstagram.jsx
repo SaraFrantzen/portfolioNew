@@ -8,12 +8,13 @@ const SingleInstagram = () => {
   const { id } = useParams;
 
   useEffect(() => {
-    
+    const X = id
     const getSingleMedia = async () => {
       const fetchSingleMedia = await Media.show(id);
       setMedia(fetchSingleMedia);
     };
     getSingleMedia();
+    debugger
   }, [id]);
 
   return (
