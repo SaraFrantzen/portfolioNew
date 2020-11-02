@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Container, Image, Form, Button } from "semantic-ui-react";
+import {
+  Container,
+  Image,
+  Form,
+  Button,
+  Message,
+  Grid,
+} from "semantic-ui-react";
 import axios from "axios";
 
 const Contact = () => {
@@ -15,21 +22,20 @@ const Contact = () => {
     setInputs((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const { email, name, message } = inputs;
-    let response = axios.post("/mailMe", {
+    let response = await axios.post("/mailMe", {
       email,
       name,
       text: message,
     });
-
+    setResponseMessage(response.data.status);
     setInputs({
       email: "",
       name: "",
       message: "",
     });
-    
   };
 
   return (
@@ -44,37 +50,55 @@ const Contact = () => {
         Fill in this form to send me a message. I will get back to you as soon
         as I read it!
       </p>
+      {responseMessage && <Message color="purple">{responseMessage}</Message>}
 
       <Form onSubmit={handleSubmit} id="contact-form">
-        <label>Your Email</label>
-        <input
-          type="text"
-          name="email"
-          onChange={handleChange}
-          value={inputs.email}
-          required
-        />
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={5}>
+              <label>Your Email</label>
+              <input
+                type="text"
+                name="email"
+                onChange={handleChange}
+                value={inputs.email}
+                required
+              />
+            </Grid.Column>
 
-        <label>Your Name:</label>
-        <input
-          type="text"
-          name="name"
-          onChange={handleChange}
-          value={inputs.name}
-          required
-        />
+            <Grid.Column width={5}>
+              <label>Your Name:</label>
+              <input
+                type="text"
+                name="name"
+                onChange={handleChange}
+                value={inputs.name}
+                required
+              />
+            </Grid.Column>
+          </Grid.Row>
 
-        <label>Type your message here</label>
-        <textarea
-          type="text"
-          name="message"
-          onChange={handleChange}
-          value={inputs.message}
-          required
-        />
-        <Button type="submit">Send</Button>
+          <Grid.Row>
+            <Grid.Column width={10}>
+              <label>Type your message here</label>
+              <textarea
+                type="text"
+                name="message"
+                onChange={handleChange}
+                value={inputs.message}
+                required
+              />
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column width={10}>
+              <Button type="submit" id="contact-button" floated="right">
+                Send
+              </Button>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </Form>
-      <p>{responseMessage}</p>
     </Container>
   );
 };
