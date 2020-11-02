@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 const Media = {
   async index() {
     const apiKey = process.env.REACT_APP_INSTAGRAM_API_KEY;

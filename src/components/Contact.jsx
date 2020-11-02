@@ -6,7 +6,7 @@ const Contact = () => {
   const [inputs, setInputs] = useState({
     email: "",
     name: "",
-    description: "",
+    message: "",
   });
   const [responseMessage, setResponseMessage] = useState("");
 
@@ -14,15 +14,22 @@ const Contact = () => {
     const { name, value } = e.target;
     setInputs((prev) => ({ ...prev, [name]: value }));
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { email, name, description } = inputs;
-    axios.post("/mailMe", {
+    const { email, name, message } = inputs;
+    let response = axios.post("/mailMe", {
       email,
       name,
-
-      text: description,
+      text: message,
     });
+
+    setInputs({
+      email: "",
+      name: "",
+      message: "",
+    });
+    
   };
 
   return (
@@ -38,7 +45,7 @@ const Contact = () => {
         as I read it!
       </p>
 
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} id="contact-form">
         <label>Your Email</label>
         <input
           type="text"
@@ -60,13 +67,14 @@ const Contact = () => {
         <label>Type your message here</label>
         <textarea
           type="text"
-          name="description"
+          name="message"
           onChange={handleChange}
-          value={inputs.description}
+          value={inputs.message}
           required
         />
         <Button type="submit">Send</Button>
       </Form>
+      <p>{responseMessage}</p>
     </Container>
   );
 };
