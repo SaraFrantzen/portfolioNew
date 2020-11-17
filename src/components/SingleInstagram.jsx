@@ -14,7 +14,7 @@ const SingleInstagram = () => {
       setMedia(fetchSingleMedia);
     };
     getSingleMedia();
-    debugger
+  
   }, [id]);
 
   return (

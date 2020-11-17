@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Image, Card, Grid } from "semantic-ui-react";
+import { Container, Image, Grid } from "semantic-ui-react";
 import  Media  from "../modules/instagram";
 import instagram from "../img/instagram.png";
 import InstaCard from "./InstaCard";
@@ -35,9 +35,9 @@ const Instagram = () => {
           <Grid.Row columns={5}>
             
             {media.map((media) => {
+              
               return (
                 <div
-             
                   key={media.id}
                   className="media-container"
                 >

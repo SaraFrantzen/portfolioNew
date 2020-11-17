@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Menu, Segment, Header } from "semantic-ui-react";
+import { Menu, Segment, Header, Container } from "semantic-ui-react";
 import i18n from "../i18n";
 
 const PortfolioHeader = () => {
@@ -44,32 +44,26 @@ const PortfolioHeader = () => {
               Instagram
             </Menu.Item>
 
-            <Menu.Item
-              as={Link}
-              to="/contact"
-              name="contact"
-              id="contact-tab"
-              position="right"
-            >
+            <Menu.Item as={Link} to="/contact" name="contact" id="contact-tab" 
+            position="right">
               {t("contact")}
             </Menu.Item>
-
-            <Menu.Item
-              onClick={() => {
-                i18n.changeLanguage("sv");
-              }}
-              position="right"
-            >
-              Svenska
-            </Menu.Item>
+            
             <Menu.Item
               onClick={() => {
                 i18n.changeLanguage("en");
               }}
-              position="right"
             >
               English
             </Menu.Item>
+            <Menu.Item
+              onClick={() => {
+                i18n.changeLanguage("sv");
+              }}
+            >
+              Svenska
+            </Menu.Item>
+          
           </Menu>
         </Header.Subheader>
       </Segment>

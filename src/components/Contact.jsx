@@ -56,9 +56,9 @@ const Contact = () => {
         <Grid>
           <Grid.Row>
             <Grid.Column width={5}>
-              <label>Your Email</label>
+              <label>Email:</label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 onChange={handleChange}
                 value={inputs.email}
@@ -67,7 +67,7 @@ const Contact = () => {
             </Grid.Column>
 
             <Grid.Column width={5}>
-              <label>Your Name:</label>
+              <label>Name:</label>
               <input
                 type="text"
                 name="name"

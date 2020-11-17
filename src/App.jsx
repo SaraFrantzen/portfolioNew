@@ -8,12 +8,11 @@ import Educations from "./components/Educations";
 import Contact from "./components/Contact";
 import Instagram from "./components/Instagram";
 import Cv from "./components/Cv";
-import SingleInstagram from './components/SingleInstagram';
+import SingleInstagram from "./components/SingleInstagram";
 
 const App = () => {
   return (
     <>
-   {/*  can import another component for loading instead of div */}
       <Suspense fallback={<div>Loading ...</div>}>
         <Header />
         <Switch>
@@ -23,7 +22,11 @@ const App = () => {
           <Route exact path="/projects" component={Projects}></Route>
           <Route exact path="/contact" component={Contact}></Route>
           <Route exact path="/instagram" component={Instagram}></Route>
-          <Route exact path="/instagram/:id" component={SingleInstagram}></Route>
+          <Route
+            exact
+            path="/instagram/:id"
+            component={SingleInstagram}
+          ></Route>
         </Switch>
         <Footer />
       </Suspense>
