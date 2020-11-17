@@ -77,36 +77,18 @@
 }
 body .ui.cards > .card {
   box-shadow: none;
-  margin-inline-end: 40px;
+  
 }
 
-#cv-button {
-  background-color: #993300;
-  margin-bottom: 10px;
-  border-bottom-left-radius: 3%;
-  border-bottom-right-radius: 3%;
-}
 
-#cv-button:hover {
-  background-color: #990000;
-}
 
-.title {
-  color: #992600;
-  margin-bottom: 10px;
-}
 
-.cv-cards {
-  margin-bottom: 100px;
-}
-#cv-grid {
-  margin-bottom: 50px;
-}
 
-#cv-time {
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
+
+
+
+
+
 
 /* Educations */
 

@@ -8,7 +8,7 @@ const EducationCard = ({ education }) => {
           <div class="ui small left floated image" id="education-img">
             <a href={education.web} target="_blank">
               {" "}
-              <img src={education.image}></img>{" "}
+              <img src={education.image}></img>
             </a>
           </div>
         </div>
