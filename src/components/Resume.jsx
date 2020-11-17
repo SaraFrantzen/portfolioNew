@@ -3,12 +3,12 @@ import React from "react";
 const Resume = ({ cv }) => {
   return (
     <>
-        <div class="ui main container">
+      <div class="ui main container">
         <div class="column">
           <div class="ui small left floated image" id="education-img">
-            <a href={cv.web} target="_blank">
+            <a href={cv.web} target="_blank" rel="noopener noreferrer">
               {" "}
-              <img src={cv.image}></img>
+              <img src={cv.image} alt="company logo"></img>
             </a>
           </div>
         </div>
@@ -17,13 +17,12 @@ const Resume = ({ cv }) => {
         </div>
 
         <div class="column" id="education-title">
-        {cv.title}
+          {cv.title}
         </div>
         <div class="column" id="education-description">
-        {cv.description}
+          {cv.description}
         </div>
       </div>
-
     </>
   );
 };

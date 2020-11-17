@@ -1,27 +1,67 @@
 [
-    {
-      "id": 1,
-      "name": "My First Website",
-      "image": "https://images.unsplash.com/photo-1506812180996-cd0a46ff6411?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "description": "This was my first project, my very first webpage. Learned alot about interacting with HTML, CSS and JavaScript. Mirrors me of being very serious inside but with a playful outside.",
-      "git": "https://github.com/Saralundkvist86/Saralundkvist86.github.io",
-      "web": "https://saralundkvist86.github.io/index.html"
-    },
-    {
-      "id": 2,
-      "name": "BMI Calculator",
-      "image": "https://images.unsplash.com/photo-1506395308321-904a71783d60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "description": "As a personal trainer, I wouldn't urge you to focus on BMI. Anyway,  as a developer, it was very fun to create this simple calculator using ReactJS.",
-      "git": "https://github.com/Saralundkvist86/BMI_React",
-      "web": "https://sarasbmicalculator.netlify.app/"
-    },
-    {
-      "id": 3,
-      "name": "Adress Book",
-      "image": "https://images.unsplash.com/photo-1591140422804-439f63729cd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "description": "A simple adress book built in JavaScript, where you can store your contacts in your computer's local storage.",
-      "git": "https://github.com/Saralundkvist86/addressBook",
-      "web": "https://saralundkvist86.github.io/addressBook/"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Rock Paper Scissors",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "description": "RPS game built in React, tested with Cypress and Jest",
+    "git": "https://github.com/Saralundkvist86/RockPaperScissor_React",
+    "web": "https://sara-rockpaperscissors.netlify.app"
+  },
+  {
+    "id": 2,
+    "name": "Final project - develUp",
+    "image": "https://images.unsplash.com/photo-1584949091882-158ebf933cda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "description": "In a team of 4 we created this mobile app using React native and Ruby on rails. The application is a matching app where clients post assignments. develUpers can then apply to these and when project is closed the develUper receive earned points and can also level up",
+    "git": "https://github.com/Saralundkvist86/Saralundkvist86.github.io",
+    "web": "https://saralundkvist86.github.io/index.html"
+  },
+  {
+    "id": 2,
+    "name": "Newsroom Challenge",
+    "image": "https://images.unsplash.com/photo-1560177112-fbfd5fde9566?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "description": "In a team of 4 we created 3 different applications for El Gaucho News, 1 React web & 1 React native mobile app for users and 1 React web app for admins. All applications uses the same server buldt in Ruby on Rails.",
+    "git": "  https://github.com/Saralundkvist86/api_el_gaucho_nyheter",
+    "web": "https://saralundkvist86.github.io/index.html"
+  },
+  {
+    "id": 1,
+    "name": "Cooper Challenge",
+    "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "description": "In this React application you are able to calculate and store your performance data, your development are displayed in a chart",
+    "git": " https://github.com/Saralundkvist86/Cooper_React",
+    "web": "https://cooper-log.netlify.app/"
+  },
+  {
+    "id": 1,
+    "name": "Crime Tracker",
+    "image": "https://images.unsplash.com/photo-1593510987185-1ec2256148a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "description": "This was my first time using an external API. The React Crimetracker application fetches data using brottsplatskartan api to display the latest crimes comitted in Sweden. The backend is build in Ruby on Rails",
+    "git": "https://github.com/Saralundkvist86/crime_tracker_client_team_1",
+    "web": "https://crime-tracker.netlify.app/"
+  },
+ 
+  {
+    "id": 1,
+    "name": "My First Website",
+    "image": "https://images.unsplash.com/photo-1516383607781-913a19294fd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
+    "description": "This was my first project, my very first webpage. Learned alot about interacting with HTML, CSS and JavaScript. Mirrors me of being very serious inside but with a playful outside.",
+    "git": "https://github.com/Saralundkvist86/Saralundkvist86.github.io",
+    "web": "https://saralundkvist86.github.io/index.html"
+  },
+  {
+    "id": 2,
+    "name": "BMI Calculator",
+    "image": "https://images.unsplash.com/photo-1550335430-182e6165c01c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+    "description": "As a personal trainer, I wouldn't urge you to focus on BMI. Anyway,  as a developer, it was very fun to create this simple calculator using ReactJS.",
+    "git": "https://github.com/Saralundkvist86/BMI_React",
+    "web": "https://sarasbmicalculator.netlify.app/"
+  },
+  {
+    "id": 3,
+    "name": "Adress Book",
+    "image": "https://images.unsplash.com/photo-1584760222437-748296f07316?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "description": "A simple adress book built in vanilla JavaScript, where you can store your contacts in your computer's local storage.",
+    "git": "https://github.com/Saralundkvist86/addressBook",
+    "web": "https://saralundkvist86.github.io/addressBook/"
+  }
+]

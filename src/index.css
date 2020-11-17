@@ -80,16 +80,6 @@ body .ui.cards > .card {
   
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Educations */
 
 #education-grid {
@@ -117,8 +107,9 @@ body .ui.cards > .card {
 /* Projects */
 .project-container {
   margin-right: 2em;
-  margin-bottom: 40em;
+  margin-bottom: 5em;
 }
+
 #projects-header {
   margin-bottom: 60px;
   font-family: "Over the Rainbow", cursive;
@@ -126,9 +117,7 @@ body .ui.cards > .card {
   color: purple;
 }
 
-.ui.card {
-  height: 200px;
-}
+
 
 #webpage,
 #github {

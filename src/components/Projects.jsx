@@ -23,7 +23,7 @@ const Projects = () => {
       </div>
       <Container>
         <Grid>
-          <Grid.Row columns={5}>
+          <Grid.Row>
             {projects.map((project) => {
               return (
                 <div
