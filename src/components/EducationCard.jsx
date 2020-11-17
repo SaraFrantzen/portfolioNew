@@ -6,9 +6,9 @@ const EducationCard = ({ education }) => {
       <div class="ui main container">
         <div class="column">
           <div class="ui small left floated image" id="education-img">
-            <a href={education.web} target="_blank">
+            <a href={education.web} target="_blank" rel="noopener noreferrer">
               {" "}
-              <img src={education.image}></img>{" "}
+              <img src={education.image} alt="company logo"></img>
             </a>
           </div>
         </div>

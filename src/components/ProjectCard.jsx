@@ -5,14 +5,13 @@ const ProjectCard = ({ project }) => {
   return (
     <>
       <Card>
-        <Image src={project.image} />
-
+        <Image src={project.image} size="medium" />
         <Card.Content>
           <Card.Header>{project.name}</Card.Header>
           <Card.Description>{project.description}</Card.Description>
 
-          <a href={project.git} target="_blank">
-            <Button animated circular id="webpage" tabindex="0">
+          <a href={project.git} target="_blank" rel="noopener noreferrer">
+            <Button small animated circular id="webpage" tabindex="0">
               <Button.Content visible>
                 <Icon name="big purple github icon" />
               </Button.Content>
@@ -20,7 +19,7 @@ const ProjectCard = ({ project }) => {
             </Button>
           </a>
 
-          <a href={project.web} target="_blank">
+          <a href={project.web} target="_blank" rel="noopener noreferrer">
             <Button animated circular id="webpage" tabindex="0">
               <Button.Content visible>
                 <Icon name="big purple chrome icon" />

@@ -19,6 +19,7 @@
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.0"
   },
+
   "scripts": {
     "start": "PORT=3001 react-scripts start",
     "start:silent": "BROWSER=none PORT=3001 react-scripts start",

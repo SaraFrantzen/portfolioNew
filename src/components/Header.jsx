@@ -56,19 +56,17 @@ const PortfolioHeader = () => {
 
             <Menu.Item
               onClick={() => {
-                i18n.changeLanguage("sv");
+                i18n.changeLanguage("en");
               }}
-              position="right"
             >
-              Svenska
+              English
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                i18n.changeLanguage("en");
+                i18n.changeLanguage("sv");
               }}
-              position="right"
             >
-              English
+              Svenska
             </Menu.Item>
           </Menu>
         </Header.Subheader>
