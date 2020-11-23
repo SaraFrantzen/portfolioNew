@@ -12,19 +12,19 @@
     "name": "Final project - develUp",
     "image": "https://images.unsplash.com/photo-1584949091882-158ebf933cda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
     "description": "In a team of 4 we created this mobile app using React native and Ruby on rails. The application is a matching app where clients post assignments. develUpers can then apply to these and when project is closed the develUper receive earned points and can also level up",
-    "git": "https://github.com/Saralundkvist86/Saralundkvist86.github.io",
-    "web": "https://saralundkvist86.github.io/index.html"
+    "git": "https://github.com/Saralundkvist86/develUp_mobile"
+    
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Newsroom Challenge",
     "image": "https://images.unsplash.com/photo-1560177112-fbfd5fde9566?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
     "description": "In a team of 4 we created 3 different applications for El Gaucho News, 1 React web & 1 React native mobile app for users and 1 React web app for admins. All applications uses the same server buldt in Ruby on Rails.",
     "git": "  https://github.com/Saralundkvist86/api_el_gaucho_nyheter",
-    "web": "https://saralundkvist86.github.io/index.html"
+    "web": "https://el-gaucho-nyheter.netlify.app/"
   },
   {
-    "id": 1,
+    "id": 4,
     "name": "Cooper Challenge",
     "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
     "description": "In this React application you are able to calculate and store your performance data, your development are displayed in a chart",

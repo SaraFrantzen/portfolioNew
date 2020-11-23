@@ -11,22 +11,23 @@ const ProjectCard = ({ project }) => {
           <Card.Description>{project.description}</Card.Description>
 
           <a href={project.git} target="_blank" rel="noopener noreferrer">
-            <Button small animated circular id="webpage" tabindex="0">
+            <Button animated circular id="webpage" tabindex="0">
               <Button.Content visible>
                 <Icon name="big purple github icon" />
               </Button.Content>
               <Button.Content hidden>GitHub</Button.Content>
             </Button>
           </a>
-
-          <a href={project.web} target="_blank" rel="noopener noreferrer">
-            <Button animated circular id="webpage" tabindex="0">
-              <Button.Content visible>
-                <Icon name="big purple chrome icon" />
-              </Button.Content>
-              <Button.Content hidden>Web Page</Button.Content>
-            </Button>
-          </a>
+          {project.web && (
+            <a href={project.web} target="_blank" rel="noopener noreferrer">
+              <Button animated circular id="webpage" tabindex="0">
+                <Button.Content visible>
+                  <Icon name="big purple chrome icon" />
+                </Button.Content>
+                <Button.Content hidden>Web Page</Button.Content>
+              </Button>
+            </a>
+          )}
         </Card.Content>
       </Card>
     </>
