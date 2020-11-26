@@ -17,9 +17,12 @@ const Hello = () => {
         <p>{t("welcome2")}</p>
         <p id="working-with"> {t("working-with")}</p>
         <p>
-          Ruby, Ruby on Rails, JavaScript, ReactJS, React Native, Semantic UI,
-          CSS
+          Javascript ES6, HTML5 & CSS. React, React Native, Redux. Semantic UI
         </p>
+        <p>Ruby on Rails, Node.js</p>
+        <p>Cypress, Jest, RSpec, Detox</p>
+        <p>API Integration</p>
+        <p>Yarn, Babel, NPM. CI/CD. Webpack</p>
       </div>
       <div class="column">
         <h2 id="one-word"> {t("explained")}</h2>
