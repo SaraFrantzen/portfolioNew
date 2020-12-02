@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a4bad85f-3e40-4348-b42c-5e5c5b293558/deploy-status)](https://app.netlify.com/sites/https://saralundkvist/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a4bad85f-3e40-4348-b42c-5e5c5b293558/deploy-status)](https://saralundkvist.netlify.app/)
 [![Repo Size](https://img.shields.io/github/repo-size/Saralundkvist86/portfolioNew)](https://github.com/Saralundkvist86/portfolioNew)
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 
