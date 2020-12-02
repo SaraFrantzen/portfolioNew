@@ -14,3 +14,4 @@ tested with Cypress 5.0.0
 
 
 Visit deployed portfolio: https://saralundkvist.netlify.app/
+visit first iteration: https://github.com/Saralundkvist86/portfolio
